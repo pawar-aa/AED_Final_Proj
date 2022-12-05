@@ -14,7 +14,7 @@ import FrontEnd.NutritionistRole.NutritionistWorkAreaJPanel;
 import javax.swing.JPanel;
 /**
  *
- * @author rutujaghate
+ * @author Mital
  */
 public class RoleNutritionConsultant extends Role{
 
