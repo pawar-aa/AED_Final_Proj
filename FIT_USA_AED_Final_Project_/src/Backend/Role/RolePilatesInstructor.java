@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author rutujaghate
+ * @author Mital
  */
 public class RolePilatesInstructor extends Role {
 
