@@ -7,7 +7,7 @@ import Backend.Role.Role;
 import java.util.ArrayList;
 /**
  *
- * @author rutujaghate
+ * @author Akhil
  */
 public class PhysicalWellnessEnterprise extends Enterprise {
     public PhysicalWellnessEnterprise(String name){
