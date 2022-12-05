@@ -9,7 +9,7 @@ import Backend.Enterprise.EnterpriseDirectory;
 
 /**
  *
- * @author Ananthakrishnan H
+ * @author Mital
  */
 public class Network {
      private String name;
