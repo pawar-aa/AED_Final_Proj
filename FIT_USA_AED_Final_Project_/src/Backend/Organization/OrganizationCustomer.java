@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author rutujaghate
+ * @author Akhil
  */
 public class OrganizationCustomer extends Organization{
     public OrganizationCustomer() {
