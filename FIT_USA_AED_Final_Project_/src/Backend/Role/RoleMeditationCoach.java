@@ -14,7 +14,7 @@ import FrontEnd.MeditationCoachRole.WorkAreaMeditationInstructorJPanel;
 import javax.swing.JPanel;
 /**
  *
- * @author ritikamangamuru
+ * @author Mital
  */
 public class RoleMeditationCoach extends Role{
     
