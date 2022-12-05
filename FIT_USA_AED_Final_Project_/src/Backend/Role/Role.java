@@ -12,7 +12,7 @@ import Backend.User.User;
 import javax.swing.JPanel;
 /**
  *
- * @author ritikamangamuru
+ * @author Akhil
  */
 public abstract class Role {
 
