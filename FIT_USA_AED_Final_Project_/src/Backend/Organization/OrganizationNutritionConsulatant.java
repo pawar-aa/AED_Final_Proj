@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Ananthakrishnan H
+ * @author Aashay
  */
 public class OrganizationNutritionConsulatant extends Organization {
     public OrganizationNutritionConsulatant() {
