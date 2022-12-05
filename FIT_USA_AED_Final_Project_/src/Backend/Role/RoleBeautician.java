@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author rutujaghate
+ * @author Aashay
  */
 public class RoleBeautician extends Role{
 
