@@ -3,17 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Backend.Enterprise;
-
-/**
- *
- * @author rutujaghate
- */
 import Backend.Role.Role;
 import java.util.ArrayList;
 
 /**
  *
- * @author rutujaghate
+ * @author Akhil
  */
 public class BodycareWellnessEnterprise extends Enterprise{
     public BodycareWellnessEnterprise(String name){

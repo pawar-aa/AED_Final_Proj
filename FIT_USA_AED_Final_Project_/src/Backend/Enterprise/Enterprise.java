@@ -9,6 +9,10 @@ import Backend.Organization.OrganizationDirectory;
  import Backend.Organization.Organization;
 import Backend.Organization.OrganizationDirectory;
 
+/**
+ *
+ * @author Mital
+ */
 public abstract class Enterprise extends Organization{
     private EnterpriseType enterpriseType;
     private OrganizationDirectory organizationDirectory;
