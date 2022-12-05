@@ -16,7 +16,7 @@ import FrontEnd.CounselorRole.WorkAreaTherapistJPanel;
 import javax.swing.JPanel;
 /**
  *
- * @author ritikamangamuru
+ * @author Aashay
  */
 public class RoleCounselor extends Role {
 
