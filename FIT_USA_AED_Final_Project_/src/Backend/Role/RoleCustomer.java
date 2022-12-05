@@ -10,13 +10,13 @@ import Backend.Network.Network;
 import Backend.Organization.OrganizationCustomer;
 import Backend.Organization.Organization;
 import Backend.User.User;
-import FrontEnd.FitUSACustomer.CustomerLoginWorkAreaJPanel;
-import FrontEnd.FitUSACustomer.CustomerWorkAreaJPanel;
+import FrontEnd.Customer.CustomerLoginWorkAreaJPanel;
+import FrontEnd.Customer.CustomerWorkAreaJPanel;
 import javax.swing.JPanel;
 
 /**
  *
- * @author rutujaghate
+ * @author Akhil
  */
 
 public class RoleCustomer extends Role {
