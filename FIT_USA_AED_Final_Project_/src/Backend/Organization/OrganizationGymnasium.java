@@ -10,7 +10,7 @@ import Backend.Role.Role;
 import java.util.ArrayList;
 /**
  *
- * @author Ananthakrishnan H
+ * @author Mital
  */
 public class OrganizationGymnasium extends Organization {
     public OrganizationGymnasium() {
