@@ -14,7 +14,7 @@ import FrontEnd.DietitionRole.DietitionnWorkAreaJPanel;
 import javax.swing.JPanel;
 /**
  *
- * @author rutujaghate
+ * @author Akhil
  */
 
 public class RoleDietitian extends Role  {
