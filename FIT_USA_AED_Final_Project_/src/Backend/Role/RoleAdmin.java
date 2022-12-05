@@ -9,12 +9,12 @@ import Backend.Enterprise.Enterprise;
 import Backend.Network.Network;
 import Backend.Organization.Organization;
 import Backend.User.User;
-import FrontEnd.EnterpriseAdminRole.AdministratorWorkAreaJPanel;  
+import FrontEnd.AdministrationRole.AdministratorWorkAreaJPanel;  
 import javax.swing.JPanel;
 
 /**
  *
- * @author rutujaghate
+ * @author Mital
  */
 
 public class RoleAdmin extends Role {
