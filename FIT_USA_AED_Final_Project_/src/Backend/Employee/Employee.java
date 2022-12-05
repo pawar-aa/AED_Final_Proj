@@ -8,7 +8,7 @@ import Backend.Role.Role;
 
 /**
  *
- * @author ritikamangamuru
+ * @author Aashay
  */
 public class Employee {
     private String ename;
