@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author rutujaghate
+ * @author Aashay
  */
 public class RoleSpaTherapist extends Role {
 
