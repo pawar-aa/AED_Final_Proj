@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author rutujaghate
+ * @author Mital
  */
 public class RoleGymTrainer extends Role {
     
