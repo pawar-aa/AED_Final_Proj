@@ -7,7 +7,7 @@ package Backend.Customers;
 import java.util.Date;
 /**
  *
- * @author Ananthakrishnan H
+ * @author Mital
  */
 public class Customer {
     private static int customerId=0;
