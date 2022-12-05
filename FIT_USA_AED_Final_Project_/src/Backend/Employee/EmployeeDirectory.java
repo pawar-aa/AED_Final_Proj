@@ -3,12 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Backend.Employee;
-
 import Backend.Role.Role;
 import java.util.ArrayList;
 /**
  *
- * @author ritikamangamuru
+ * @author Aashay
  */
 public class EmployeeDirectory {
      private ArrayList<Employee> employeeList;
