@@ -9,11 +9,11 @@ import Backend.Enterprise.Enterprise;
 import Backend.Network.Network;
 import Backend.Organization.Organization;
 import Backend.User.User;
-import FrontEnd.FitUSAAdmin.SystemAdminWorkAreaJPanel;
+import FrontEnd.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 import javax.swing.JPanel;
 /**
  *
- * @author ritikamangamuru
+ * @author Aashay
  */
 public class RoleSystemAdmin extends Role{
 
