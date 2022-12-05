@@ -9,7 +9,7 @@ import Backend.Role.Role;
 import java.util.ArrayList;
 /**
  *
- * @author rutujaghate
+ * @author Mital
  */
 public class OrganizationAdministrator extends Organization {
     public OrganizationAdministrator() {
