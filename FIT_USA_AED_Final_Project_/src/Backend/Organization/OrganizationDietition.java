@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Ananthakrishnan H
+ * @author Akhil
  */
 public class OrganizationDietition extends Organization {
     public OrganizationDietition() {
