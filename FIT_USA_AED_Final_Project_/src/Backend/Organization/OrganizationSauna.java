@@ -6,7 +6,7 @@ package Backend.Organization;
 
 /**
  *
- * @author Ananthakrishnan H
+ * @author Mital
  */
 public class OrganizationSauna {
     

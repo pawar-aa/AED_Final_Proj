@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author rutujaghate
+ * @author Mital
  */
 public class OrganizationPilates extends Organization {
     public OrganizationPilates() {

@@ -7,7 +7,7 @@ package Backend.Organization;
 import java.util.ArrayList;
 /**
  *
- * @author ritikamangamuru
+ * @author Mital
  */
 public class OrganizationDirectory {
     private ArrayList<Organization> organizationList;

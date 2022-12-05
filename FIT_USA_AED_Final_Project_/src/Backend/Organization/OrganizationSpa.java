@@ -9,7 +9,7 @@ import Backend.Role.RoleSpaTherapist;
 import java.util.ArrayList;
 /**
  *
- * @author rutujaghate
+ * @author Akhil
  */
 public class OrganizationSpa extends Organization {
     public OrganizationSpa() {

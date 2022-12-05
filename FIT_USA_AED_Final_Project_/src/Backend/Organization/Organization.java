@@ -11,7 +11,7 @@ import Backend.WorkQueue.WorkQueue;
 import java.util.ArrayList;
 /**
  *
- * @author Ananthakrishnan H
+ * @author Mital
  */
 public abstract class Organization {
     private String name;

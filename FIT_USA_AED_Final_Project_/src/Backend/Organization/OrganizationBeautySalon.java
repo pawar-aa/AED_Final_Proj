@@ -9,7 +9,7 @@ import Backend.Role.RoleBeautician;
 import java.util.ArrayList;
 /**
  *
- * @author Ananthakrishnan H
+ * @author Aashay
  */
 
 public class OrganizationBeautySalon extends Organization {

@@ -10,7 +10,7 @@ import Backend.Role.Role;
 import java.util.ArrayList;
 /**
  *
- * @author Ananthakrishnan H
+ * @author Aashay
  */
 public class OrganizationMeditation extends Organization{
      public OrganizationMeditation() {
