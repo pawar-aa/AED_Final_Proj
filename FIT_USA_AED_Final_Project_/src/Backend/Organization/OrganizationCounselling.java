@@ -10,7 +10,7 @@ import Backend.Role.RoleCounselor;
 import java.util.ArrayList;
 /**
  *
- * @author Ananthakrishnan H
+ * @author Aashay
  */
 public class OrganizationCounselling extends Organization {
     public OrganizationCounselling() {
