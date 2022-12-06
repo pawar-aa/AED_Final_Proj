@@ -9,7 +9,7 @@ import Backend.Role.Role;
 import Backend.WorkQueue.WorkQueue;
 /**
  *
- * @author ritikamangamuru
+ * @author Aashay
  */
 public class User {
 
