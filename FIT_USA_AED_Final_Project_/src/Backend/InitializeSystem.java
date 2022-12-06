@@ -10,7 +10,7 @@ import Backend.Role.RoleSystemAdmin;
 import Backend.User.User;
 /**
  *
- * @author ritikamangamuru
+ * @author Akhil
  */
 public class InitializeSystem {
     public static EcoSystem configure(){

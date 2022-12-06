@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author ritikamangamuru
+ * @author Akhil
  */
 public class EcoSystem extends Organization{
     private static EcoSystem business;
