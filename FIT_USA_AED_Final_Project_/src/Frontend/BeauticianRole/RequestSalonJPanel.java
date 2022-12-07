@@ -11,7 +11,7 @@ import Backend.Organization.Organization;
 import Backend.Organization.OrganizationBeautySalon;
 import Backend.User.User;
 import Backend.WorkQueue.BeauticianWorkRequest;
-import FrontEnd.FitUSACustomer.CustomerLoginWorkAreaJPanel;
+import FrontEnd.Customer.CustomerLoginWorkAreaJPanel;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JOptionPane;
@@ -20,13 +20,11 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author anky
+ * @author Aashay
  */
 public class RequestSalonJPanel extends javax.swing.JPanel {
 
-    /**
-     * Creates new form RequestSalonJPanel
-     */
+  
     private JPanel userProcessContainer;
     private Enterprise enterprise;
     private User userAccount;
@@ -63,12 +61,14 @@ public class RequestSalonJPanel extends javax.swing.JPanel {
         messageJTextField = new javax.swing.JTextField();
         RequetsjButton = new javax.swing.JButton();
         image = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 153));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        backJButton.setBackground(new java.awt.Color(255, 255, 204));
-        backJButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        backJButton.setBackground(new java.awt.Color(0, 102, 102));
+        backJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("Back");
         backJButton.setBorder(null);
         backJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -76,32 +76,43 @@ public class RequestSalonJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 70, 40));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 70, 30));
 
-        enterprice.setFont(new java.awt.Font("Sitka Display", 1, 18)); // NOI18N
-        enterprice.setForeground(new java.awt.Color(102, 0, 102));
-        enterprice.setText("Enterprise: ");
-        add(enterprice, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, -1, 30));
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 170, 90, 20));
+        enterprice.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        enterprice.setForeground(new java.awt.Color(0, 153, 153));
+        enterprice.setText(" Enterprise: ");
+        add(enterprice, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, 110, 40));
 
-        messagejLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        messagejLabel.setText("Message");
-        add(messagejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, -1, -1));
-        add(messageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 280, 50));
+        valueLabel.setForeground(new java.awt.Color(255, 255, 255));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 150, 190, 40));
 
-        RequetsjButton.setBackground(new java.awt.Color(255, 255, 204));
-        RequetsjButton.setFont(new java.awt.Font("Sitka Display", 1, 18)); // NOI18N
-        RequetsjButton.setText("Request Appointment");
-        RequetsjButton.setBorder(null);
+        messagejLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        messagejLabel.setForeground(new java.awt.Color(255, 255, 255));
+        messagejLabel.setText("Appointment Details");
+        add(messagejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 220, 200, 40));
+        add(messageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 220, 290, 40));
+
+        RequetsjButton.setBackground(new java.awt.Color(0, 153, 153));
+        RequetsjButton.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        RequetsjButton.setForeground(new java.awt.Color(255, 255, 255));
+        RequetsjButton.setText("Book Appointment");
+        RequetsjButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         RequetsjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RequetsjButtonActionPerformed(evt);
             }
         });
-        add(RequetsjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 290, 60));
+        add(RequetsjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 330, 190, 40));
 
-        image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/dca60a7ad8221b73d43bba56d0298a30.jpg"))); // NOI18N
-        add(image, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 530));
+        image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/logo-transparent-png (1).png"))); // NOI18N
+        add(image, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 510, 400, 210));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Hair Salon Appointment Booking");
+        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 370, 50));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -167,6 +178,7 @@ public class RequestSalonJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backJButton;
     private javax.swing.JLabel enterprice;
     private javax.swing.JLabel image;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField messageJTextField;
     private javax.swing.JLabel messagejLabel;
     private javax.swing.JLabel valueLabel;
