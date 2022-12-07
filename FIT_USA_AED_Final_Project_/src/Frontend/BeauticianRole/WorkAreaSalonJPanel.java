@@ -19,13 +19,11 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author anky
+ * @author Aashay
  */
 public class WorkAreaSalonJPanel extends javax.swing.JPanel {
 
-    /**
-     * Creates new form WorkAreaSalonJPanel
-     */
+
     private JPanel userProcessContainer;
     private OrganizationBeautySalon salonorganization;
     private Enterprise enterprise;
@@ -62,70 +60,79 @@ public class WorkAreaSalonJPanel extends javax.swing.JPanel {
         assignjButton = new javax.swing.JButton();
         processjButton = new javax.swing.JButton();
         declinejButton = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 153));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         organizationjLabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        organizationjLabel.setForeground(new java.awt.Color(255, 255, 102));
-        organizationjLabel.setText("Organization");
-        add(organizationjLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, 20));
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 100, 20));
+        organizationjLabel.setForeground(new java.awt.Color(0, 153, 153));
+        organizationjLabel.setText("Organization:");
+        add(organizationjLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, 100, 30));
 
-        workRequestJTable.setBackground(new java.awt.Color(204, 255, 255));
+        valueLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        valueLabel.setForeground(new java.awt.Color(0, 153, 153));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, 210, 30));
+
+        workRequestJTable.setBackground(new java.awt.Color(0, 153, 153));
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Message", "Sender", "Reciever", "Status"
+                "Client Request Details", "Client Name", "Assignee", "Appointment Status"
             }
         ));
         jScrollPane1.setViewportView(workRequestJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, -1, 138));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 190, 660, 150));
 
-        assignjButton.setBackground(new java.awt.Color(255, 255, 204));
+        assignjButton.setBackground(new java.awt.Color(0, 153, 153));
         assignjButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        assignjButton.setText("Assign");
-        assignjButton.setBorder(null);
+        assignjButton.setForeground(new java.awt.Color(255, 255, 255));
+        assignjButton.setText("Confirm Appointment");
+        assignjButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         assignjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignjButtonActionPerformed(evt);
             }
         });
-        add(assignjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 350, 98, 30));
+        add(assignjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 210, 30));
 
-        processjButton.setBackground(new java.awt.Color(255, 255, 204));
+        processjButton.setBackground(new java.awt.Color(0, 153, 153));
         processjButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        processjButton.setText("Process");
-        processjButton.setBorder(null);
+        processjButton.setForeground(new java.awt.Color(255, 255, 255));
+        processjButton.setText("Appointment Completed");
+        processjButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         processjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processjButtonActionPerformed(evt);
             }
         });
-        add(processjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(229, 350, 110, 30));
+        add(processjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 460, 210, 30));
 
-        declinejButton.setBackground(new java.awt.Color(255, 255, 204));
+        declinejButton.setBackground(new java.awt.Color(0, 153, 153));
         declinejButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        declinejButton.setText("Decline");
-        declinejButton.setBorder(null);
+        declinejButton.setForeground(new java.awt.Color(255, 255, 255));
+        declinejButton.setText("Decline Appoinment");
+        declinejButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         declinejButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 declinejButtonActionPerformed(evt);
             }
         });
-        add(declinejButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, 94, 30));
+        add(declinejButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 410, 210, 30));
 
-        jButton1.setText("jButton1");
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 50, -1, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/logo-transparent-png (1).png"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 530, 400, 180));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/photo-1516975080664-ed2fc6a32937.jpeg"))); // NOI18N
-        jLabel1.setNextFocusableComponent(jButton1);
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 660, 490));
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Hair Salon Employee Appointment Page");
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, 430, 60));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignjButtonActionPerformed
@@ -194,8 +201,8 @@ public class WorkAreaSalonJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton assignjButton;
     private javax.swing.JButton declinejButton;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel organizationjLabel;
     private javax.swing.JButton processjButton;
