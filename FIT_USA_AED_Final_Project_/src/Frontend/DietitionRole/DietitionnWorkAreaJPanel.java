@@ -18,13 +18,11 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author anky
+ * @author Mital
  */
 public class DietitionnWorkAreaJPanel extends javax.swing.JPanel {
 
-    /**
-     * Creates new form DietitionnWorkAreaJPanel
-     */
+  
     private JPanel userProcessContainer;
     private OrganizationDietition dieticianorganization;
     private Enterprise enterprise;
@@ -61,70 +59,82 @@ public class DietitionnWorkAreaJPanel extends javax.swing.JPanel {
         processJButton = new javax.swing.JButton();
         declineJButton = new javax.swing.JButton();
         imagelabel = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(0, 153, 153));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         organization.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 18)); // NOI18N
+        organization.setForeground(new java.awt.Color(0, 153, 153));
         organization.setText("Organization");
-        add(organization, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 30, 140, 40));
+        add(organization, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, 140, 40));
 
+        valueLabel.setForeground(new java.awt.Color(0, 153, 153));
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, -1, -1));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, -1, -1));
 
-        workRequestJTable.setBackground(new java.awt.Color(231, 200, 237));
+        workRequestJTable.setBackground(new java.awt.Color(0, 153, 153));
         workRequestJTable.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 7, true));
         workRequestJTable.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        workRequestJTable.setForeground(new java.awt.Color(255, 255, 255));
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Message", "Sender", "Reciver", "Status"
+                "Client Request Details", "Client Name", "Assignee", "Appointment Status"
             }
         ));
         workRequestJTable.setSelectionBackground(new java.awt.Color(231, 200, 237));
         jScrollPane1.setViewportView(workRequestJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 610, 140));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 130, 720, 140));
 
-        assignJButton.setBackground(new java.awt.Color(231, 200, 237));
-        assignJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        assignJButton.setBackground(new java.awt.Color(0, 153, 153));
+        assignJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         assignJButton.setForeground(new java.awt.Color(255, 255, 255));
-        assignJButton.setText("Assign Request");
-        assignJButton.setBorder(null);
+        assignJButton.setText("Confirm Appointment");
+        assignJButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 120, 30));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 320, 200, 30));
 
-        processJButton.setBackground(new java.awt.Color(231, 200, 237));
-        processJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        processJButton.setBackground(new java.awt.Color(0, 153, 153));
+        processJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         processJButton.setForeground(new java.awt.Color(255, 255, 255));
-        processJButton.setText("Process Request");
-        processJButton.setBorder(null);
+        processJButton.setText("Appointment Completed");
+        processJButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, 130, 30));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, 200, 30));
 
-        declineJButton.setBackground(new java.awt.Color(231, 200, 237));
-        declineJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        declineJButton.setBackground(new java.awt.Color(0, 153, 153));
+        declineJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         declineJButton.setForeground(new java.awt.Color(255, 255, 255));
-        declineJButton.setText("Decline Request");
-        declineJButton.setBorder(null);
+        declineJButton.setText("Decline Appointment");
+        declineJButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         declineJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 declineJButtonActionPerformed(evt);
             }
         });
-        add(declineJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 360, 130, 30));
+        add(declineJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 370, 200, 30));
 
-        imagelabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/dietimage.jpg"))); // NOI18N
-        add(imagelabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1210, 520));
+        imagelabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/logo-transparent-png (1).png"))); // NOI18N
+        add(imagelabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 520, 390, 200));
+
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Nutrition Employee Appointment Page");
+        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, 440, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
@@ -191,6 +201,7 @@ public class DietitionnWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton assignJButton;
     private javax.swing.JButton declineJButton;
     private javax.swing.JLabel imagelabel;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel organization;
     private javax.swing.JButton processJButton;

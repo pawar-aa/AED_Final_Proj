@@ -11,7 +11,7 @@ import Backend.Organization.OrganizationDietition;
 import Backend.Organization.Organization;
 import Backend.User.User;
 import Backend.WorkQueue.DietitionWorkRequest;
-import FrontEnd.FitUSACustomer.CustomerLoginWorkAreaJPanel;
+import FrontEnd.Customer.CustomerLoginWorkAreaJPanel;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JOptionPane;
@@ -19,13 +19,11 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author anky
+ * @author Akhil
  */
 public class DietitionRequestJPanel extends javax.swing.JPanel {
 
-    /**
-     * Creates new form DietitionRequestJPanel
-     */
+ 
     private JPanel userProcessContainer;
     private Enterprise enterprise;
     private User userAccount;
@@ -59,39 +57,47 @@ public class DietitionRequestJPanel extends javax.swing.JPanel {
         messageJTextField = new javax.swing.JTextField();
         RequestTaskButton = new javax.swing.JButton();
         back = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         imagelabel = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(0, 153, 153));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        JLABLE1.setBackground(new java.awt.Color(0, 153, 153));
         JLABLE1.setFont(new java.awt.Font("Sitka Display", 1, 24)); // NOI18N
-        JLABLE1.setForeground(new java.awt.Color(102, 0, 0));
+        JLABLE1.setForeground(new java.awt.Color(0, 153, 153));
         JLABLE1.setText("Enterprise :");
-        jPanel1.add(JLABLE1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, -1, -1));
-        jPanel1.add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 60, 90, 30));
+        jPanel1.add(JLABLE1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 400, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        jLabel1.setText("Message  ");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, -1));
-        jPanel1.add(messageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, 180, -1));
+        valueLabel.setBackground(new java.awt.Color(0, 153, 153));
+        valueLabel.setForeground(new java.awt.Color(0, 153, 153));
+        jPanel1.add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 400, 90, 30));
 
-        RequestTaskButton.setBackground(new java.awt.Color(204, 204, 255));
-        RequestTaskButton.setFont(new java.awt.Font("Sitka Heading", 1, 24)); // NOI18N
-        RequestTaskButton.setForeground(new java.awt.Color(0, 102, 102));
-        RequestTaskButton.setText("Request Appointment");
-        RequestTaskButton.setBorderPainted(false);
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Appointment Details  ");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 250, 200, 30));
+        jPanel1.add(messageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 250, 320, 30));
+
+        RequestTaskButton.setBackground(new java.awt.Color(0, 153, 153));
+        RequestTaskButton.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
+        RequestTaskButton.setForeground(new java.awt.Color(255, 255, 255));
+        RequestTaskButton.setText("Book Appointment");
         RequestTaskButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RequestTaskButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(RequestTaskButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 330, 30));
+        jPanel1.add(RequestTaskButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 350, 240, 30));
 
-        back.setBackground(new java.awt.Color(204, 204, 255));
+        back.setBackground(new java.awt.Color(0, 102, 102));
         back.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        back.setForeground(new java.awt.Color(255, 255, 255));
         back.setText("Back");
         back.setBorder(null);
         back.addActionListener(new java.awt.event.ActionListener() {
@@ -99,12 +105,20 @@ public class DietitionRequestJPanel extends javax.swing.JPanel {
                 backActionPerformed(evt);
             }
         });
-        jPanel1.add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 80, 30));
+        jPanel1.add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 80, 30));
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, 570, 320));
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Nutritionist Appointment Booking");
+        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, 440, 40));
 
-        imagelabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/wallpaperflare.com_wallpaper (10) (1).jpg"))); // NOI18N
-        add(imagelabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1210, 600));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/logo-transparent-png (1).png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 460, -1, -1));
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1060, 660));
+        add(imagelabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 550, 200, 100));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
@@ -171,6 +185,8 @@ public class DietitionRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JButton back;
     private javax.swing.JLabel imagelabel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField messageJTextField;
     private javax.swing.JLabel valueLabel;
